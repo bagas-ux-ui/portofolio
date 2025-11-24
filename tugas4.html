@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 4 - Pemutar Video</title>
+
+  <style>
+    /* === Navbar dari tugas7 === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: white;
+      background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url('background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 50, 0.4);
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo-img {
+      height: 55px;
+      width: auto;
+    }
+
+    .navigation a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .navigation a:hover {
+      color: yellow;
+      text-shadow: 0 0 10px #ffff00;
+    }
+
+    /* === Area konten (tugas4) === */
+    .content {
+      text-align: center;
+      margin-top: 55px;
+      color: white;
+    }
+
+    button {
+      background-color: rgba(0, 0, 50, 0.7);
+      border: 1px solid white;
+      color: white;
+      padding: 8px 16px;
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: yellow;
+      color: black;
+    }
+
+    video {
+      margin-top: 15px;
+      border: 2px solid white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+    
+ .main {
+      margin-top: 30px;
+      margin-left: 80px;
+    }
+
+    .back-btn {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid #ffff00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .back-btn:hover {
+      background: #ffff00;
+      color: black;
+      text-shadow: 0 0 10px #ffff00;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔹 Navbar dari tugas7 -->
+ <header>
+  <div style="display:flex; align-items:center; gap:10px;">
+  <a href="index.html.html">
+    <img src="LOGO.png" height="45px" style="cursor:pointer;">
+  </a>
+</div>
+
+  <nav class="navigation">
+  <nav class="navigation">
+    <a href="index.html.html#home">HOME</a>
+    <a href="#profile">PROFILE</a>
+    <a href="index.html#home">DAFTAR TUGAS</a>
+    <a href="index.html.html#contact">CONTACT</a>
+  </nav>
+</header>
+
+  <!-- TOMBOL BACK -->
+  <div class="main">
+    <a href="index.html#home" class="back-btn">← BACK</a>
+  </div>
+
+  <!-- 🔹 Konten tugas4 (fungsi tidak diubah) -->
+  <div class="content">
+    <h2>Pemutar Video Interaktif</h2>
+    <p>Klik tombol di bawah untuk mengontrol video.</p>
+
+    <div>
+      <button onclick="tekanPause()">Play/Pause</button>
+      <button onclick="menjadiBig()">Big</button>
+      <button onclick="menjadiSmall()">Small</button>
+      <button onclick="menjadiNormal()">Normal</button>
+      <br><br>
+      
+      <video id="videoku" width="430" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.mp4" type="video/ogg">
+        Browser anda tidak support video HTML 5.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    var VideoAku = document.getElementById("videoku");
+
+    function tekanPause() {
+      if (VideoAku.paused)
+        VideoAku.play();
+      else
+        VideoAku.pause();
+    }
+
+    function menjadiBig() {
+      VideoAku.width = 560;
+    }
+
+    function menjadiSmall() {
+      VideoAku.width = 320;
+    }
+
+    function menjadiNormal() {
+      VideoAku.width = 430;
+    }
+  </script>
+
+</body>
+</html>

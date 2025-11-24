@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TUGAS</title>
+  <style>
+    /* ===== BODY DAN BACKGROUND ===== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* 🔹 Background dengan efek blur */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        linear-gradient(rgba(0,0,50,0.5), rgba(0,0,50,0.5)),
+        url('download.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(6px);
+      z-index: -1;
+    }
+
+    /* ===== HEADER (konsisten dengan halaman lain) ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 50, 0.3);
+      padding: 10px 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+    .logo-img {
+      height: 50px;
+      width: auto;
+      vertical-align: middle;
+    }
+
+    .navigation a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .navigation a:hover {
+      color: yellow;
+    }
+
+    /* ===== SECTION TUGAS ===== */
+    .tugas-section {
+      padding: 140px 50px 60px;
+      text-align: center;
+    }
+
+    .tugas-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      border-bottom: 3px solid #ffff00;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    /* ===== TOMBOL PILIHAN TUGAS ===== */
+    .tugas-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .tugas-btn {
+      background: rgba(255,255,255,0.2);
+      color: white;
+      border: 2px solid #ffff00;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 200px;
+    }
+
+    .tugas-btn:hover {
+      background: #ffff00;
+      color: black;
+      transform: translateY(-5px);
+    }
+
+    @media (max-width: 768px) {
+      .tugas-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .tugas-btn {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER SAMA SEPERTI HALAMAN LAIN -->
+  <header>
+    <img src="Logo zyactra.png" alt="Logo ZYACTRA" class="logo-img">
+      <nav class="navigation">
+          <a href="home.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="profile.html">PROFILE</a>
+          <a href="tugas.html">TUGAS</a>
+    </nav>
+  </header>
+
+  <!-- SECTION TUGAS -->
+  <section class="tugas-section">
+    <h1>DAFTAR TUGAS</h1>
+    <div class="tugas-container">
+      <button class="tugas-btn" onclick="location.href='tugas2.html'">Tugas 1</button>
+      <button class="tugas-btn" onclick="location.href='tugas2.html'">Tugas 2</button>
+      <button class="tugas-btn" onclick="location.href='tugas3.html'">Tugas 3</button>
+      <button class="tugas-btn" onclick="location.href='tugas4.html'">Tugas 4</button>
+      <button class="tugas-btn" onclick="location.href='tugas5.html'">Tugas 5</button>
+      <button class="tugas-btn" onclick="location.href='tugas6.html'">Tugas 6</button>
+      <button class="tugas-btn" onclick="location.href='tugas7.html'">Tugas 7</button>
+      <button class="tugas-btn" onclick="location.href='tugas8.html'">Tugas 8</button>
+      <button class="tugas-btn" onclick="location.href='tugas9.html'">Tugas 9</button>
+      <button class="tugas-btn" onclick="location.href='tugas10.html'">Tugas 10</button>
+    </div>
+  </section>
+
+</body>
+</html>

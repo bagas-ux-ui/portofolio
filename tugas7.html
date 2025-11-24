@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TUGAS 7 - Wisata Indonesia</title>
+  <style>
+    /* === RESET & FONTS === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* === BACKGROUND === */
+    body {
+      color: white;
+      background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url('background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* === NAVBAR === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 50, 0.4);
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo-img {
+      height: 55px;
+      width: auto;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: yellow;
+      text-shadow: 0 0 10px #ffff00;
+    }
+
+    /* === TOMBOL BACK === */
+    .main {
+      margin-top: 30px;
+      margin-left: 80px;
+    }
+
+    .back-btn {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid #ffff00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .back-btn:hover {
+      background: #ffff00;
+      color: black;
+      text-shadow: 0 0 10px #ffff00;
+    }
+
+    /* === TABEL KONTEN === */
+    table {
+      width: 85%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    td {
+      padding: 20px;
+      vertical-align: top;
+      color: white;
+    }
+
+    td img {
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+    /* Kolom kiri & kanan */
+    td[bgcolor="#F0F8FF"] {
+      background: rgba(255,255,255,0.15);
+      border-radius: 10px;
+    }
+
+    /* === JUDUL & SUBJUDUL === */
+    h1, h2, h3 {
+      color: #ffff00;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      letter-spacing: 1.5px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 25px;
+      line-height: 1.7;
+    }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 50, 0.6);
+      border-top: 2px solid #ffff00;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      .main {
+        margin-left: 20px;
+      }
+      table {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<header>
+  <div style="display:flex; align-items:center; gap:10px;">
+  <a href="index.html.html">
+    <img src="LOGO.png" height="45px" style="cursor:pointer;">
+  </a>
+</div>
+
+  <nav class="navigation">
+  <nav class="navigation">
+    <a href="index.html.html#home">HOME</a>
+    <a href="#profile">PROFILE</a>
+    <a href="index.html#home">DAFTAR TUGAS</a>
+    <a href="index.html.html#contact">CONTACT</a>
+  </nav>
+</header>
+
+  <!-- TOMBOL BACK -->
+  <div class="main">
+    <a href="index.html#home" class="back-btn">← BACK</a>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div align="center">
+    <table cellpadding="10" cellspacing="0">
+      <tr>
+        <td colspan="3" align="center">
+          <h1>Wonderful Indonesia</h1>
+          <h3>Pesona Alam dan Budaya Nusantara</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <!-- Kolom kiri -->
+        <td width="25%" bgcolor="#F0F8FF">
+          <h3>Top Destinasi</h3>
+          <ul>
+            <li>Bali</li>
+            <li>Yogyakarta</li>
+            <li>Lombok</li>
+            <li>Raja Ampat</li>
+            <li>Danau Toba</li>
+          </ul>
+        </td>
+
+        <!-- Konten tengah -->
+        <td width="50%" align="center">
+          <h2>Wisata Yogyakarta</h2>
+          <img src="image.png" 
+               width="400" height="250" alt="Tanah Lot Bali"><br><br>
+          <p>
+            Yogyakarta merupakan salah satu destinasi wisata unggulan di Indonesia, dikenal sebagai Jantung Budaya Jawa dan pusat seni serta sejarah. Kota ini menawarkan warisan budaya yang kaya, dengan destinasi utama yang mencerminkan kemegahan masa lalu dan tradisi yang hidup hingga kini.
+
+            <p>🗺️ Destinasi Unggulan</p>
+            <p>- Candi Borobudur: Mahakarya arsitektur Buddha terbesar di dunia, menawarkan panorama alam yang memukau dan ukiran relief yang menceritakan kisah kehidupan.</p>
+            <p>- Candi Prambanan: Kompleks candi Hindu yang megah, terkenal dengan legenda Roro Jonggrang dan arsitektur runcingnya yang dramatis.</p>
+            <p>- Keraton Yogyakarta: Pusat pemerintahan dan tempat tinggal Sultan yang masih aktif, memungkinkan pengunjung merasakan langsung denyut nadi tradisi dan kebudayaan Jawa.          </p></p>
+        </td>
+
+        <!-- Kolom kanan -->
+        <td width="25%" bgcolor="#F0F8FF" align="center">
+          <h3>Galeri</h3>
+          <img src="image3.png" width="100%" height="100">
+          <img src="image2.png" width="100%" height="100">
+          <img src="image4.png" width="100%" height="100">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Wisata Indonesia | Dibuat oleh <b>bgs</b>
+  </footer>
+
+</body>
+</html>

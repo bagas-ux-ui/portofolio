@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TUGAS 6 - List Multi Level</title>
+
+  <style>
+    /* === RESET & FONTS === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* === BACKGROUND === */
+    body {
+      color: white;
+      background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url('background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* === NAVBAR (sama seperti tugas4) === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 50, 0.4);
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo-img {
+      height: 55px;
+      width: auto;
+    }
+
+    .navigation a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .navigation a:hover {
+      color: yellow;
+      text-shadow: 0 0 10px #ffff00;
+    }
+
+    /* === TOMBOL BACK === */
+    .main {
+      margin-top: 30px;
+      margin-left: 80px;
+    }
+
+    .back-btn {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid #ffff00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .back-btn:hover {
+      background: #ffff00;
+      color: black;
+      text-shadow: 0 0 10px #ffff00;
+    }
+
+    /* === KONTEN UTAMA === */
+    .content {
+      margin: 40px auto;
+      width: 75%;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    h3 {
+      text-align: center;
+      color: #ffff00;
+      margin-bottom: 25px;
+      font-size: 1.8em;
+    }
+
+    ol, ul {
+      margin-left: 35px;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      .content {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .main {
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<header>
+  <div style="display:flex; align-items:center; gap:10px;">
+  <a href="index.html.html">
+    <img src="LOGO.png" height="45px" style="cursor:pointer;">
+  </a>
+</div>
+
+  <nav class="navigation">
+  <nav class="navigation">
+    <a href="index.html.html#home">HOME</a>
+    <a href="#profile">PROFILE</a>
+    <a href="index.html#home">DAFTAR TUGAS</a>
+    <a href="index.html.html#contact">CONTACT</a>
+  </nav>
+</header>
+
+  <!-- TOMBOL BACK -->
+  <div class="main">
+    <a href="index.html#home" class="back-btn">← BACK</a>
+  </div>
+
+  <!-- ISI UTAMA -->
+  <div class="content">
+    <h3>Komponen yang Membangun Sistem Komputer</h3>
+
+    <ol type="1">
+      <li>Hardware
+        <ol type="A">
+          <li>Input Device
+            <ul type="square">
+              <li>Mouse</li>
+              <li>Keyboard</li>
+              <li>Joystick</li>
+            </ul>
+          </li>
+          <li>Output Device
+            <ol type="i">
+              <li>Monitor</li>
+              <li>Printer</li>
+              <li>Speaker</li>
+            </ol>
+          </li>
+          <li>Process
+            <ul type="circle">
+              <li>Central Processing Unit</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+
+      <li>Software
+        <ol type="a">
+          <li>Operating System
+            <ul type="circle">
+              <li>Windows</li>
+              <li>Unix</li>
+              <li>Linux</li>
+            </ul>
+          </li>
+          <li>Programming Language
+            <ul type="square">
+              <li>Delphi</li>
+              <li>Cobol</li>
+              <li>RPG</li>
+            </ul>
+          </li>
+          <li>Utility Program</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+
+</body>
+</html>

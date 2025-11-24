@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>HOME</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background halaman */
+body {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url('background1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 50, 0.3);
+  padding: 10px 30px;
+}
+
+/* Logo gambar */
+.logo-img {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Navigasi */
+.navigation a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navigation a:hover {
+  color: yellow;
+  text-shadow: 0 0 10px #ffff00;
+}
+
+/* Section Home */
+.home-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Garis */
+.line {
+  height: 4px;
+  width: 95%;
+  background: #fff;
+  margin: 10px auto 30px auto;
+}
+
+/* Kotak atas */
+.top-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.top-box h2 {
+  font-size: 24px;
+}
+
+/* Kotak bawah */
+.bottom-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bottom-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.bottom-box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.bottom-box p {
+  font-size: 14px;
+}
+
+
+.main {
+      margin-top: 30px;
+      margin-left: 65px;
+    }
+
+    .back-btn {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid #ffff00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .back-btn:hover {
+      background: #ffff00;
+      color: black;
+      text-shadow: 0 0 10px #ffff00;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Header dengan logo dan navigasi -->
+<header>
+  <div style="display:flex; align-items:center; gap:10px;">
+  <a href="index.html.html">
+    <img src="LOGO.png" height="45px" style="cursor:pointer;">
+  </a>
+</div>
+
+  <nav class="navigation">
+  <nav class="navigation">
+    <a href="index.html.html#home">HOME</a>
+    <a href="#profile">PROFILE</a>
+    <a href="index.html#home">DAFTAR TUGAS</a>
+    <a href="index.html.html#contact">CONTACT</a>
+  </nav>
+</header>
+
+  <!-- TOMBOL BACK -->
+  <div class="main">
+    <a href="index.html#home" class="back-btn">← BACK</a>
+  </div>
+
+  <!-- Bagian HOME -->
+  <section class="home-section">
+    <div class="line"></div>
+
+    <!-- Kotak atas -->
+    <div class="top-box">
+      <h2>Selamat Datang di Website Kami</h2>
+    </div>
+
+    <!-- Kotak bawah -->
+    <div class="bottom-boxes">
+      <div class="bottom-box">
+        <h3>Visi</h3>
+        <p>Menjadi platform informasi terbaik untuk semua orang.</p>
+      </div>
+      <div class="bottom-box">
+        <h3>Misi</h3>
+        <p>Menyajikan konten yang bermanfaat, mudah dipahami, dan terpercaya.</p>
+      </div>
+      <div class="bottom-box">
+        <h3>Tujuan</h3>
+        <p>Membantu pengguna memperoleh informasi secara cepat dan tepat.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
